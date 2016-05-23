@@ -11,6 +11,7 @@
     tools:context="com.example.content.scrolldemo.MainActivity">
 
     <com.example.content.scrolldemo.myview.ScrollButton
+        android:id="@+id/button"
         android:text="会移动的Button!"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
