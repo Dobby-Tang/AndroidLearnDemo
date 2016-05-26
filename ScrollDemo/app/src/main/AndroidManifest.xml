@@ -18,6 +18,9 @@
 
         <activity android:name=".HorizontalScrollActivity"
             android:launchMode="singleTask"/>
+
+        <activity android:name=".HorizontalScroll2Activity"
+            android:launchMode="singleTask"/>
     </application>
 
 </manifest>

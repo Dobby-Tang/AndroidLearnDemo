@@ -128,9 +128,10 @@ public class HorizontalScrollViewEx extends ViewGroup{
                     mChildIndex = (scrollX + mChildWidth / 2) / mChildWidth;
                 }
 
-                mChildIndex = Math.max(0,Math.min(mChildIndex,mChildIndex - 1));
+                mChildIndex = Math.max(0,Math.min(mChildIndex,mChildrenSize - 1));
                 int dx = mChildIndex * mChildWidth - scrollX;
                 smoothScrollBy(dx,0);
+                mVelocityTracker.clear();
                 break;
 
             default :
