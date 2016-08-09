@@ -1,0 +1,3 @@
+include ':app'
+include ':samples:gestures'
+include ':samples:zoomable'
