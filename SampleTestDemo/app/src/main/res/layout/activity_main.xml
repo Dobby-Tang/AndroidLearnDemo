@@ -1,47 +1,23 @@
 <LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:fresco="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:baselineAligned="false"
-  android:orientation="horizontal"
+  android:orientation="vertical"
   >
-  <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <FrameLayout
-            android:id="@+id/page1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-          <com.facebook.samples.zoomable.ZoomableDraweeView
-          android:id="@+id/zoomableView1"
-          style="@style/drawee"
-          />
-        </FrameLayout>
+    <Button
+        android:id="@+id/zoomable_view"
+        android:text="ZoomableView"
+        android:onClick="zoomable"
+        style="@style/button"
+        />
 
-        <FrameLayout
-            android:id="@+id/page2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-          <com.facebook.samples.zoomable.ZoomableDraweeView
-          android:id="@+id/zoomableView2"
-          style="@style/drawee"
-          />
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/page3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-          <com.facebook.samples.zoomable.ZoomableDraweeView
-          android:id="@+id/zoomableView3"
-          style="@style/drawee"
-          />
-        </FrameLayout>
-
-    </android.support.v4.view.ViewPager>
+    <Button
+        android:id="@+id/zoomable_view_list"
+        android:text="ZoomableViewList"
+        android:onClick="zoomableList"
+        style="@style/button"
+        />
 
 </LinearLayout>
